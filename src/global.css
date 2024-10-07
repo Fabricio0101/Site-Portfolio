@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+	:root {
+		--background: 0 0% 100%; /* Branco */
+		--foreground: 0 0% 0%; /* Preto */
+		--card: 0 0% 100%; /* Branco */
+		--card-foreground: 0 0% 0%; /* Preto */
+		--popover: 0 0% 100%; /* Branco */
+		--popover-foreground: 0 0% 0%; /* Preto */
+		--primary: 0 0% 11.4%; /* #1D1D1D */
+		--primary-foreground: 0 0% 100%; /* Branco */
+		--secondary: 0 0% 100%; /* #FFFF */
+		--secondary-foreground: 0 0% 0%; /* Preto */
+		--muted: 0 0% 100%; /* Branco */
+		--muted-foreground: 0 0% 0%; /* Preto */
+		--accent: 0 0% 100%; /* Branco */
+		--accent-foreground: 0 0% 0%; /* Preto */
+		--destructive: 0 100% 50%; /* Vermelho puro */
+		--destructive-foreground: 0 0% 100%; /* Branco */
+		--border: 0 0% 100%; /* Branco */
+		--input: 0 0% 100%; /* Branco */
+		--ring: 0 0% 11.4%; /* #1D1D1D */
+		--radius: 0.5rem;
+	}
+
+	.dark {
+		--background: 0 0% 0%; /* Preto */
+		--foreground: 0 0% 100%; /* Branco */
+		--card: 0 0% 11.4%; /* #1D1D1D */
+		--card-foreground: 0 0% 100%; /* Branco */
+		--popover: 0 0% 11.4%; /* #1D1D1D */
+		--popover-foreground: 0 0% 100%; /* Branco */
+		--primary: 0 0% 11.4%; /* #1D1D1D */
+		--primary-foreground: 0 0% 100%; /* Branco */
+		--secondary: 0 0% 100%; /* #FFFF */
+		--secondary-foreground: 0 0% 0%; /* Preto */
+		--muted: 0 0% 100%; /* Branco */
+		--muted-foreground: 0 0% 0%; /* Preto */
+		--accent: 0 0% 100%; /* Branco */
+		--accent-foreground: 0 0% 0%; /* Preto */
+		--destructive: 0 100% 50%; /* Vermelho puro */
+		--destructive-foreground: 0 0% 100%; /* Branco */
+		--border: 0 0% 100%; /* Branco */
+		--input: 0 0% 100%; /* Branco */
+		--ring: 0 0% 11.4%; /* #1D1D1D */
+		--radius: 0.5rem;
+	}
+}
+
+@layer base {
+	* {
+		@apply border-border;
+	}
+	body {
+		@apply bg-background text-foreground;
+	}
+}
